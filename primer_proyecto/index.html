@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css"> 
+    <link rel="preload" href="hojaEstilo.css" as="style">
+    <link rel="stylesheet" href="hojaEstilo.css">
     <title>Document</title>
 </head>
 <body>
 
     <header>
-        <h1>Lautaro Medeiros ->Freelancer</h1>
+        <h1 id="h1Titulo">Lautaro Medeiros <span id="spanFree">Freelancer</span></h1>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bground">
+        <nav class="navPrincipal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
     <!--<img src="/freelancer_inicio/hero.jpg" alt="">-->
 

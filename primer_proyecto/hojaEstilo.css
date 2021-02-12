@@ -1,0 +1,38 @@
+:root{
+    --blanco:#ffffff;
+    --negro:#212121;
+    --amarillo:#FFC107;
+    --azul:#0097A7;
+    --gris:#757575;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#h1Titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+#spanFree{
+    font-size: 2rem;
+}
+
+.navPrincipal{
+    
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bground{
+    background-color: var(--azul); 
+}
