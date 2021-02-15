@@ -1,22 +1,26 @@
 :root{
     --blanco:#ffffff;
     --negro:#212121;
-    --amarillo:#FFC107;
+    --amarillo:#FFC107;/* Definir variables*/
     --azul:#0097A7;
     --gris:#757575;
 }
 
+@media(min-width:){
+
+}
+
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; /* Formatea todo el texto de la pagina haciendo que 1rem == 10px*/
 }
 
 body{
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;/* Formatea todo el texto de la pagina haciendo que 1rem == 10px*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/* Formatea todo el texto de la pagina con una misma fuente*/
 }
 
 #h1Titulo{
-    text-align: center;
+    text-align: center; /* Para centrar texto */
     font-size: 3.8rem;
 }
 
@@ -24,15 +28,28 @@ body{
     font-size: 2rem;
 }
 
-.navPrincipal{
-    
-}
-
 .contenedor{
-    width: 120rem;
-    margin: 0 auto;
+    width: 120rem;/* Modifica el largo*/
+    margin: 0 auto; /*Margenes*/
 }
 
 .nav-bground{
     background-color: var(--azul); 
+}
+
+.navPrincipal{    
+    display: flex; /* Habilita el flexbox*/
+    justify-content:space-around; /* Permite distribuir los elementos horizontalmente Center,Start,End */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navPrincipal a{
+    color: var(--blanco);
+    text-decoration: none; /* Para eliminar subrayados */
+    padding: 1rem;/* Ensancha el contenido hacia los bordes*/
+}
+
+.navPrincipal a:hover{/* Hover indica que cuando pase el mouse por encima del elemento, se va a activar el css */
+    background-color: var(--amarillo);
 }
