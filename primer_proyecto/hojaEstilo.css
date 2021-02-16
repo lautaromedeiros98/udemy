@@ -6,10 +6,6 @@
     --gris:#757575;
 }
 
-@media(min-width:){
-
-}
-
 html{
     font-size: 62.5%; /* Formatea todo el texto de la pagina haciendo que 1rem == 10px*/
 }
@@ -29,7 +25,7 @@ body{
 }
 
 .contenedor{
-    width: 120rem;/* Modifica el largo*/
+    max-width: 120rem;/* Modifica el largo*/
     margin: 0 auto; /*Margenes*/
 }
 
@@ -39,9 +35,18 @@ body{
 
 .navPrincipal{    
     display: flex; /* Habilita el flexbox*/
-    justify-content:space-around; /* Permite distribuir los elementos horizontalmente Center,Start,End */
+    justify-content:space-between; /* Permite distribuir los elementos horizontalmente Center,Start,End */
     font-size: 2rem;
     font-weight: bold;
+}
+/*768 Tablets*/
+/*480 Celulares*/
+/*1140 y 1440 Notebooks y Escritorio*/
+
+@media (min-width : 768px){ 
+    .navPrincipal{
+        flex-direction: row;
+    }
 }
 
 .navPrincipal a{
