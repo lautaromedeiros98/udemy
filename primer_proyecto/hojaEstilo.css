@@ -35,9 +35,7 @@ body{
 
 .navPrincipal{    
     display: flex; /* Habilita el flexbox*/
-    justify-content:space-between; /* Permite distribuir los elementos horizontalmente Center,Start,End */
-    font-size: 2rem;
-    font-weight: bold;
+    flex-direction: column;
 }
 /*768 Tablets*/
 /*480 Celulares*/
@@ -45,7 +43,8 @@ body{
 
 @media (min-width : 768px){ 
     .navPrincipal{
-        flex-direction: row;
+        flex-direction: row;/*Si el width de un item es menor a 768 se pone en columna*/
+        justify-content: space-between; /*Alinea los items de una columna*/
     }
 }
 
@@ -53,6 +52,9 @@ body{
     color: var(--blanco);
     text-decoration: none; /* Para eliminar subrayados */
     padding: 1rem;/* Ensancha el contenido hacia los bordes*/
+    font-size: 2rem;
+    font-weight: bold;
+    text-align:center;
 }
 
 .navPrincipal a:hover{/* Hover indica que cuando pase el mouse por encima del elemento, se va a activar el css */
