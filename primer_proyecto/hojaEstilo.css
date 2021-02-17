@@ -8,6 +8,11 @@
 
 html{
     font-size: 62.5%; /* Formatea todo el texto de la pagina haciendo que 1rem == 10px*/
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body{
@@ -15,7 +20,7 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/* Formatea todo el texto de la pagina con una misma fuente*/
 }
 
-#h1Titulo{
+.titulos{
     text-align: center; /* Para centrar texto */
     font-size: 3.8rem;
 }
@@ -25,7 +30,7 @@ body{
 }
 
 .contenedor{
-    max-width: 120rem;/* Modifica el largo*/
+    max-width: 135rem;/* Modifica el largo*/
     margin: 0 auto; /*Margenes*/
 }
 
@@ -59,4 +64,10 @@ body{
 
 .navPrincipal a:hover{/* Hover indica que cuando pase el mouse por encima del elemento, se va a activar el css */
     background-color: var(--amarillo);
+}
+
+.hero{
+    background-image: url("/primer_proyecto/freelancer_inicio/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
