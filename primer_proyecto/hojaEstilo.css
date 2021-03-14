@@ -9,6 +9,7 @@
 html{
     font-size: 62.5%; /* Formatea todo el texto de la pagina haciendo que 1rem == 10px*/
     box-sizing: border-box;
+    scroll-snap-align: y mandatory;
 }
 
 *, *:before, *:after {
@@ -48,7 +49,8 @@ h1,h2,h3{
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 1rem;
-    
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .contenedor{
@@ -124,12 +126,17 @@ h1,h2,h3{
     text-transform: uppercase;
     font-weight: bold;
     border-radius: .5rem;
+    border: none;
 }
 
 @media(min-width:480px){
     .boton{
         width: auto;
     }
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 @media(min-width:768px){
@@ -188,4 +195,26 @@ h1,h2,h3{
 
 .formulario fieldset{
     border: none;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color:var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo input, .campo textarea{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.enviar .boton{
+    width: 100%;
 }
