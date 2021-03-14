@@ -44,7 +44,6 @@
     <main class="contenedor sombra">
         <h2>Mis servicios</h2>
         <div class="servicios">
-
             <section class="servicio">
                 <h3>Diseño web</h3>
                 <div class="iconos">
@@ -80,6 +79,7 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
+
             <section class="servicio">
                 <h3>E-Commerce</h3>
                 <div class="iconos">
@@ -94,36 +94,39 @@
                 <p>Lorem ipsum dolor sit amet consectetur adikupisicing elit.</p>
             </section>
         </div>
-    </main>
 
     <section>
         <h2>Contacto</h2>
     </section>
 
-    <form action="">
+    <form action="" class="formulario">
         <fieldset>
-            <div>
-                <label for="">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre">
-            </div>
-
-            <div>
-                <label for="">Telefono</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Ingresar telefono">
-            </div>
-
-            <div>
-                <label for="">Correo</label>
-                <input type="email" name="email" id="email" placeholder="Ingresar direccion de mail">
-            </div>
-
-            <div>
-                <label for="">Dejanos tu mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
+            <legend>Contacanos llenando todos los campos</legend>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre">
+                </div>
+    
+                <div class="campo">
+                    <label for="">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingresar telefono">
+                </div>
+    
+                <div class="campo">
+                    <label for="">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresar direccion de mail">
+                </div>
+    
+                <div class="campo">
+                    <label for="">Dejanos tu mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
+                </div>
             </div>
             <input class="boton" type="submit" name="enviar" id="enviar">
         </fieldset>
     </form>
+</main>
 
     <p>Todos los derechos reservados, Lautaro Medeiros desarrollador</p>
 </body>
