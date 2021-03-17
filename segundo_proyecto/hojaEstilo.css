@@ -2,7 +2,7 @@
     --fuentePrincipal :'Happy Monkey', cursive;
     --colorPrimero : #e45231;
     --colorSecundario : #F06142;
-    --amarillo : #FFC300;
+    --amarillo : #ffee00;
     /*#F14B27*/
 }
 
@@ -17,7 +17,7 @@ html {
 body{
     background-color:var(--colorSecundario);
     font-size: 1.6rem;
-    line-height: 1.5;
+        line-height: 1.62;
 }
 
 p{
@@ -35,7 +35,7 @@ img{
 }
 
 .contenedor{
-    max-width: 130rem;
+    max-width: 95rem;
     margin: 0 auto;
 }
 
@@ -95,4 +95,156 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.producto{
+    background-color: var(--colorPrimero);
+    padding: 1rem;
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+.producto__nombre{
+    font-size: 4rem;
+}
+
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--amarillo);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 2rem;
+}
+
+@media(min-width:768px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }   
+}
+
+.producto__nombre,.producto__precio{
+    font-family: var(--fuentePrincipal);
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.grafico{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+
+.grafico--camisas{
+    grid-row: 2 / 3;
+    background-image: url(/FrontEndStore_inicio/img/grafico1.jpg);
+}
+
+.grafico--node{
+    background-image: url(/FrontEndStore_inicio/img/grafico2.jpg);
+    grid-row: 8 / 9;
+}
+
+@media(min-width:768px){
+    .grafico--node{
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+}
+
+.contenedorNosotros{
+    display : grid;
+    grid-template-rows: repeat(2,auto);
+    align-items: center;
+}
+
+@media(min-width:768px){
+    .contenedorNosotros{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.contenedorNosotros__imagen{
+    grid-row: 1 / 2;
+    width: 100%;
+}
+
+@media(min-width:768px)
+{
+    .contenedorNosotros__imagen{
+        grid-column: 2 / 3;
+    }
+}
+
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 2rem;
+}
+
+@media(min-width:768px){
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
+
+.bloque{
+    text-align: center;
+}
+
+.bloque__titulo{
+    margin: 0;
+}
+
+.bloque__imagen{
+    width: 60%;
+}
+
+@media(min-width:768px){
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap : 2rem;
+    }
+}
+
+.camisa__imagen{
+    width: 90%;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.7rem;
+}
+
+.formulario__campo{
+    border: 1rem solid var(--colorPrimero);
+    background-color: var(--colorSecundario);
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.formulario__submit{
+    background-color: var(--amarillo);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .4s ease;
+    grid-column: 1 / 3 ;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: #ffa600;
+}
 
