@@ -48,3 +48,17 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+
+@media(min-width:768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 3rem;
+        grid-auto-flow: column;
+    }
+
+    aside{
+        grid-column: 2/3;
+    }
+}

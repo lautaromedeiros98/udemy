@@ -36,4 +36,14 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/** Los widht con porcentajes le dan fluidez a la pagina **/ 
+
+.contenedor{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    width: 95%;
+}
