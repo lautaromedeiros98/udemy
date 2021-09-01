@@ -9,10 +9,25 @@ function DescargarClientes(){
     })
 }
 
+function DescargarPedidos(){
+
+    return new Promise(resolve=>{
+        console.log("Descargando pedidos...")
+        setTimeout(() => { // En 1 segundo se lanza la funcion
+            resolve("Descarga completa");
+            }, 3000);
+            
+    })
+}
+
 async function app(){
     try{
-        const resultado = await DescargarClientes();
-        console.log(resultado);
+        /*const clientes = await DescargarClientes();
+        const pedidos = await DescargarPedidos();
+        console.log(resultado);*/
+        const resultado = await Promise.all(DescargarClientes(),DescargarPedidos());
+        console.log(resultado[0]);
+        console.log(resultado[1]);
     }catch(error){
         console.log(error);
     }
